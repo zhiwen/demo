@@ -1,0 +1,10 @@
+<!--components/marquee.wxml-->
+<view class='marquee_container'>
+  <view class='marquee_text' style='{{ orientation }}:{{ marqueeDistance }}px;font-size: {{size}}px;'>
+    <image 
+    class='marquee_image'
+    src="https://img.lovepik.com/element/40145/8022.png_300.png"
+    />
+  {{ text }}
+  </view>
+</view>

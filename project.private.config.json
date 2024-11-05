@@ -1,0 +1,7 @@
+{
+  "projectname": "demo",
+  "setting": {
+    "compileHotReLoad": true,
+    "skylineRenderEnable": false
+  }
+}

@@ -1,0 +1,19 @@
+/* components/marquee.wxss */
+.marquee_container {
+  position: relative;
+  width: 100%;
+  white-space: nowrap;
+  background-color: aquamarine;
+}
+
+.marquee_image {
+  position: relative;  
+  width: 30px;
+  height: 30px;
+}
+
+.marquee_text {
+  position: relative;
+  white-space: nowrap;
+  background-color: aquamarine;
+}

@@ -1,0 +1,51 @@
+<!--index.wxml-->
+<navigation-bar title="同城高质量搭子组局群" back="{{false}}" color="white" background="#2A8CE5"></navigation-bar>
+
+<marquee text="欢迎你加入同城群聊" style="padding-top: 20px; display: inline;"></marquee>
+<view>
+  <view class="icon-box">
+    <icon class="icon-small" type="search" color="blue" size="30"/>
+    <text style="background-color: rgb(245, 218, 188); display: inline;">1. 关注喜欢的群；2.加入粉群；3.关注群消息
+    </text>
+  </view>
+</view>
+
+<scroll-view class="scroll-view_H" scroll-x="true">
+  <swiper
+    autoplay="{{autoplay}}"
+    interval="{{interval}}"
+    duration="{{duration}}"
+    indicator-dots="{{indicatorDots}}"
+  >
+    <block wx:for="{{provinceList}}" wx:for-index="pidx" wx:for-item="item">
+      <swiper-item  class="menu-wrp">
+        <view class="menu-list" wx:for="{{item}}" wx:for-item="e" wx:for-index="eidx" >
+          <image class="menu-img" src="{{e.imgUrl}}" wx:key="unique" 
+          bind:tap="itemTaped" data-pcode="{{e.code}}"/>
+          <view  class="menu-desc" >{{e.name}}</view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</scroll-view>
+
+<scroll-view scroll-y="true" class="container">
+  <block wx:for="{{groupList[pcode]}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}">
+      <view class="feed-item">
+        <view class="feed-source">
+          <view class="avatar">
+            <image src="{{item.imgUrl}}"></image>
+          </view>
+          <text>{{item.title}}</text>
+          <text 
+          style="padding-top: 30px; font-size: small; font-weight: 400; color: #a9acac;">titletitletitletitle{{item.desc}}</text>
+
+          <button class="default" 
+          style="font-size: small; font-weight: 400; background-color: #fa621b; width: 90px; color: #fdfdfd; border-radius: 70px;" 
+          type="default">
+          +加群
+          </button>
+        </view>
+      </view>
+    </block>
+</scroll-view>

@@ -1,0 +1,145 @@
+/**index.wxss**/
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-tab {
+  width: 750rpx;
+  height: 100rpx;
+  background: #298DE5;
+  color: #8CCEFD;
+  font-size: 28rpx;
+  line-height: 100rpx;
+  box-shadow: 0 2px 2px #bebebe;
+  margin: 0 0 8rpx 0;
+  z-index: 9999;
+}
+
+.activity{
+  width: 100%;
+}
+.activity image{
+  width: 750rpx;
+  height: 375rpx;
+}
+
+.tips {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 0px;
+  vertical-align: -10px;
+  width: 38px;
+  height: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.demo-scroll-nav {
+  height: 300rpx;
+}
+
+.nav-wrapper {
+  height: 100%;
+  white-space: nowrap;
+}
+
+.nav-wrapper text {
+  display: inline-block;
+  padding: 0 20px;
+  height: 100%;
+  line-height: 80rpx;
+}
+
+.menu-wrp {
+  width:100%;
+  margin-top:20rpx;
+  display: inline-block;
+}
+
+.menu-list {
+  float:left;
+  /* width:20%; */
+  box-sizing: border-box;
+  padding-bottom:10px;
+  display: inline-block;
+}
+.menu-img {
+  width:120rpx;
+  height:120rpx;
+  display:block;
+  margin:0 5px auto;
+  margin-bottom:5px;
+}
+.menu-desc {
+  color:#333333;
+  width:100%;
+  text-align: center;
+  font-size:12px;
+}
+
+.scroll-view_H{
+  white-space: nowrap;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.container{
+  /* padding: 20px; */
+  padding: 1px;
+  margin: 0px;
+}
+
+.container .feed-item{
+  /* width: 100%; */
+  padding: 10rpx 0rpx 20rpx;
+  /* margin: 0rpx 0 0rpx 0px; */
+  background: #ffffff;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 5px #eeeeee;
+}
+
+.container .feed-item .feed-source{
+  padding: 0px;
+  height: 140rpx;
+}
+
+.container .feed-item .feed-source .avatar {
+  position: relative;
+  display: inline-flex;
+}
+
+.container .feed-item .feed-source .avatar image{
+  /* position: absolute; */
+  display: inline-block;
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 35rpx;
+  /* top: 10rpx; */
+  /* vertical-align: middle; */
+}
+
+.container .feed-item .feed-source text{
+  position: absolute;
+  display: inline-block;
+  height: 40rpx;
+  width: 55%;
+  line-height: 40rpx;
+  vertical-align: middle;
+  margin: 0 0 0 15rpx;
+  /* color: #a0acac; */
+  font-weight: 600;
+  font-size: 30rpx;
+  padding-top:5px;
+}
+
+.container .feed-item .feed-source button {
+  float: inline-end;
+  margin-right: 5px;
+  margin-top: 20px;
+
+}
